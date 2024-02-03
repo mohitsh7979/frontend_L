@@ -1,0 +1,14 @@
+.h {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-shadow: 2px 2px 8px green;
+  }
+
+#a{
+        background-color: #712cf9;
+}
