@@ -1,0 +1,23 @@
+  <!-- 
+    margin 
+    padding
+    box-sizeing
+    display (block,inline,inline-block)
+    Postions(static,relative,absolute,fixed,stickey)
+    flex-box(justify-content,align-items,flex-direction,flex-wrap)
+    background-image
+    overflow
+    z-index
+    box-shadow
+    text-shadow
+    nth:child
+  -->
+
+    <!-- 
+    2 Layouts
+    Signup Page 
+    About us page 
+    Instagram Page 
+    Google Page 
+    Facebook Page
+    -->

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 80%;
+        width: 30%;
+        border: 2px solid black;
+      }
+
+      .inner-box-1 {
+        height: 70%;
+        border: 2px solid red;
+      }
+
+      .inner-box-2 {
+        height: 10%;
+        border: 2px solid green;
+      }
+      .inner-box-3 {
+        height: 20%;
+        border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        height: 20%;
+        border: 2px dashed green;
+      }
+
+      .form {
+        height: 50%;
+        border: 2px dashed blueviolet;
+      }
+
+      .links {
+        height: 30%;
+        border: 2px dashed brown;
+        text-align: center;
+        position: relative;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      input {
+        padding: 15px;
+        margin: 5px;
+      }
+
+      .inner-box-1 div {
+        width: 70%;
+        margin: auto;
+      }
+
+      .inner-box-3 img {
+        width: 40%;
+        height: 45%;
+        margin: 0px 3px;
+      }
+
+      .links h4::before {
+        content: "";
+        color: red;
+        border: 1px solid gray;
+        position: absolute;
+        width: 30%;
+        left: 30px;
+        top: 8px;
+    
+      }
+
+      .links h4::after {
+        content: "";
+        color: red;
+        border: 1px solid gray;
+        position: absolute;
+        width: 30%;
+        right: 30px;
+        top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box">
+        <div class="inner-box-1">
+          <div class="logo"></div>
+          <div class="form">
+            <input type="text" placeholder="username" />
+            <input type="text" placeholder="password" />
+            <input type="submit" />
+          </div>
+          <div class="links">
+            <h4>OR</h4>
+          </div>
+        </div>
+        <div class="inner-box-2"></div>
+        <div class="inner-box-3">
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"
+            alt=""
+          />
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 
+    margin 
+    padding
+    box-sizeing
+    display (block,inline,inline-block)
+    Postions(static,relative,absolute,fixed,stickey)
+    flex-box(justify-content,align-items,flex-direction,flex-wrap)
+    background-image
+    -->
+
+    <!-- 
+    2 Layouts
+    Signup Page 
+    About us page 
+    Instagram Page 
+    Google Page 
+    Facebook Page
+    -->
+
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a{
+            text-decoration: none;
+        }
+
+        li{
+
+            list-style: none;
+        } */
+
+        .box{
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 50px;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-y: scroll; */
+            /* overflow: auto; */
+        }
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+
+            height: 500px;
+            width: 50%;
+            border: 2px solid black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .item{
+
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+           
+        }
+
+        .item:nth-child(1){
+
+            top: 0px;
+            background-color: brown;
+            /* z-index: 3; */
+            box-shadow: inset 0px 0px 50px yellow , inset  0px 0px 50px red ;
+        }
+
+        .item:nth-child(2){
+            background-color: red;
+            right: 0px;
+            box-shadow: 0px -10px 5px yellow , 0px 0px 50px red ;
+            /* z-index: 5; */
+          
+        }
+        .item:nth-child(3){
+            background-color: green;
+            left: 0px;
+            box-shadow: inset 0px 0px 50px yellow , inset  0px 0px 50px red ;
+            /* z-index: 1; */
+        }
+        .item:nth-child(4){
+            background-color: blue;
+            bottom: 0px;
+            box-shadow: inset 0px 0px 50px yellow , inset  0px 0px 50px red ;
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- <a href="">This is text</a>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Register</li>
+    </ul> -->
+
+<!-- 
+    <div class="box">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur rerum quam incidunt tempora, est velit doloremque perspiciatis expedita eum magnam, fugiat officiis quidem iure! Quibusdam omnis animi necessitatibus deleniti aliquid totam minus nesciunt eaque eligendi repellat molestiae quia ex excepturi fugiat labore, sit praesentium aspernatur non harum quis! Eius distinctio quas cupiditate deleniti nulla modi iusto eaque dolore quam? Veniam iusto qui, obcaecati facere nemo culpa perspiciatis a iure corrupti debitis totam eum vero eveniet saepe expedita odit vel aut mollitia! Facere deleniti eos, at sapiente labore recusandae qui aspernatur! Quam non tenetur sint alias reprehenderit, aliquid libero, iure dolorum accusamus deleniti debitis, corrupti aut odit. Totam explicabo cum similique rerum, expedita doloribus optio sequi quod non quidem quas qui. Assumenda eveniet laborum voluptatibus animi, qui voluptate, ipsam possimus aliquid magnam corrupti aut maxime? Tenetur, obcaecati libero temporibus incidunt culpa exercitationem at, debitis sunt impedit quaerat nulla? Laborum odio cupiditate distinctio saepe temporibus? Iste ratione reprehenderit obcaecati quisquam explicabo in saepe unde sint exercitationem magni non ut dolore molestiae fugiat earum harum officia consequatur, repudiandae rem dolorem enim expedita adipisci perferendis magnam. Asperiores laudantium inventore, nemo perferendis illo aperiam provident, nihil suscipit quasi labore neque tempore rem molestias corrupti?
+    </div>
+     -->
+
+
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+</html>
