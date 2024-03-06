@@ -11,6 +11,8 @@
     box-shadow
     text-shadow
     nth:child
+    animation
+    transections
   -->
 
     <!-- 
