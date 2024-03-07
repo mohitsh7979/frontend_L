@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+
+            background-color: black;
+          
+        }
+        .container{
+
+            display: grid;
+            /* grid-template-columns: 400px 800px 250px; */
+            /* grid-template-columns: 2fr 3fr 1fr; */
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-rows: 1fr 3fr 1fr;
+            height:100vh;
+
+        }
+
+        .box{
+
+            /* height: 200px; */
+            /* width: 200px; */
+            background-color: papayawhip;
+            margin: 2px;
+        }
+
+        #box-2{
+
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            
+            /* grid-gap: 1rem; */
+        }
+
+        .inner{
+
+            height: 200px;
+            background-color: yellow;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box"></div>
+        <div class="box" id="box-2">
+            <div class="inner"></div>
+            <!-- <div class="inner"></div> -->
+        </div>
+        <div class="box"></div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+
+    </div>
+    
+</body>
+</html>
