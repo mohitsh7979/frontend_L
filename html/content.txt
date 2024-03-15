@@ -1,4 +1,5 @@
   <!-- 
+
     margin 
     padding
     box-sizeing
@@ -13,6 +14,10 @@
     nth:child
     animation
     transections
+    transform 
+    media query
+    grid 
+    
   -->
 
     <!-- 

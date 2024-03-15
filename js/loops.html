@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+
+
+    <script>
+       
+    //    let i = 0;
+    //    do{
+    //     console.log("Hello")
+    //    }while(i==2)
+
+    // let a = prompt("Enter Your Number : ")
+    // let i = 0;
+    // while(i<=a){
+    //     if(i==a/2){
+    //         break;
+    //     }
+    //     console.log(i)
+
+    //     i++;
+    // }
+
+    /* sum of odd numbers */
+
+    // for(let i = 0; i<10; i++){
+    //     console.log(i)
+    // }
+
+
+    let num  = 145;
+    let original_num = num;
+    let sum = 0;
+    while(num>0){
+
+        let i = num%10;
+        let fact = 1;
+        for(let j = i ; j>=1 ; j--){
+            fact = fact*j
+        }
+        sum = sum + fact;
+        num = parseInt(num/10);
+    }
+
+    console.log(sum)
+    console.log(num)
+    if(original_num==sum){
+        console.log("Strong Number")
+    }
+
+    else{
+        console.log("not strong number")
+    }
+
+       
+     
+  
+    </script>
+    
+</body>
+</html>
