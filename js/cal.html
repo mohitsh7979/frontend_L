@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .container{
+
+            border: 2px solid black;
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+
+        input{
+
+            padding: 10px;
+            margin: 5px 0px;
+        }
+
+        button{
+
+            padding: 18px;
+            margin:2px 4px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="input">
+            <input type="text" autofocus>
+        </div>
+        <div class="button">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>=</button>
+            <button>0</button>
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>D</button>
+            <button>C</button>
+        </div>
+    </div>
+
+
+    <script>
+
+
+      let btn = document.querySelectorAll("button");
+      for(let i of btn){
+        i.onclick = function(){
+
+            if(i.innerText == "="){
+               let a = document.querySelector("input").value;
+               document.querySelector("input").value = eval(a);
+            //    console.log(eval(a))
+            }
+            else if(i.innerText == "C"){
+                document.querySelector("input").value = "";
+            }
+            else if(i.innerText == "D"){
+                let a = document.querySelector("input").value;
+                document.querySelector("input").value = a.slice(0,-1);
+
+            }
+            else{
+
+                document.querySelector("input").value += i.innerText
+            }
+            
+        }
+      }
+    
+
+    
+    //   document.querySelector("button").onclick = function(){
+
+    //     let a = document.querySelectorAll("input");
+    //     for(let i of a){
+    //         console.log(i)
+    //     }
+    //   }
+
+    </script>
+    
+</body>
+</html>

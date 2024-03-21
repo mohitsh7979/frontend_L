@@ -21,7 +21,7 @@
     <input type="text" class="inp1">
     <button class="btn">Click</button> -->
 
-   [ <input type="text" class="inp"> 0
+   <!-- [ <input type="text" class="inp"> 0
     <input type="text" class="inp"> 1
     <input type="text" class="inp"> 2
     <input type="text" class="inp"> 3
@@ -30,17 +30,28 @@
     <input type="text" class="inp"> 6
     <input type="text" class="inp"> 7
     <input type="text" class="inp"> 8
-    <button class="btn">Submit</button> ]
+    <button class="btn">Submit</button> ] -->
+
+
+    <input type="text" id="inp1">
+    <button id="btn">5</button>
 
 
     <script>
          
 
-   
-           document.getElementsByClassName("btn")[0].onclick = function(){
+         document.getElementById("btn").onclick = function(){
 
-            let n  = document.getElementsByClassName("inp");
-             console.log(n)
+               let a = document.getElementById("btn").innerText; 
+               document.getElementById("inp1").value = a;
+             
+         }
+
+   
+        //    document.getElementsByClassName("btn")[0].onclick = function(){
+
+        //     let n  = document.getElementsByClassName("inp");
+        //      console.log(n)
            
 
             // for(let i in n){
@@ -56,7 +67,7 @@
             //     let a = document.getElementsByClassName("inp")[i].value;
             //     console.log(a)
             // }
-        }
+     
     //    document.getElementById("select").onclick = function(){
           
         //   let s = document.getElementById("select").value;
