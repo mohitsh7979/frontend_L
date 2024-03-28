@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #c{
+            color: red;
+        }
+    </style>
+  </head>
+  <body id="b">
+    <button>Submit</button>
+
+    <script>
+      let b = document.querySelector("button");
+      b.addEventListener('click',()=>{
+            
+        let d = document.createElement("p");
+        // d.setAttribute("class","box1")
+        d.className = "box"
+        d.innerHTML = "<h1 id =c>This is my heading tag</h1>";
+        console.log(d)
+        document.querySelector("#b").appendChild(d);
+      })  
+
+    //   function Output() {
+    //     console.log("Hello World");
+    //   }
+    //   document.querySelector("button").onclick = Output;
+
+    // document.querySelector("button").onclick = Output; 
+ </script>
+  </body>
+</html>
