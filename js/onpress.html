@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        min-height: 20vh;
+        width: 50%;
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea name="" id="" cols="30" rows="10"></textarea> <br />
+    <br />
+    <h2>Css Propeties</h2>
+    <input type="text" placeholder="color" id="inp1" />
+    <input type="text" placeholder="background color" id="inp2" />
+    <input type="text" placeholder="Font size" id="inp3">
+    <div class="box"></div>
+    <p>Total latters : <span class="len"></span></p>
+
+    <script>
+      document.querySelector("textarea").oninput = function (event) {
+        document.querySelector(".box").innerText = event.target.value;
+        let len = event.target.value;
+        document.querySelector(".len").innerHTML = len.length;
+      };
+
+      document.querySelector("#inp1").oninput = function (event) {
+        document.querySelector(".box").style.color = event.target.value;
+      };
+
+      document.querySelector("#inp2").oninput = function (event) {
+        document.querySelector(".box").style.backgroundColor = event.target.value;
+      };
+
+      document.querySelector("#inp3").oninput = function (event) {
+        document.querySelector(".box").style.fontSize = event.target.value + "px";
+      };
+    </script>
+  </body>
+</html>
