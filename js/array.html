@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [1,8,9,26,5699,5];
+
+      let max = 0;
+      let s_max = 0;
+      let t_max = 0;
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] > max) {
+          max = a[i];
+        }
+    }
+
+    for(let i = 0 ; i<a.length ; i++){
+
+        if (a[i] > t_max && a[i] < s_max && a[i] < max) {
+          t_max = a[i];
+        }
+    }
+     
+      console.log(t_max)
+
+      // a.forEach(function (item) {
+      //   console.log(item);
+      // });
+
+      //    for(let i = 0 ; i<a.length ; i=i+2){
+
+      //     console.log(a[i])
+      //    }
+
+      // for(let i of a){
+      //     console.log(i)
+      // }
+
+      //   for (let i in a) {
+      //     console.log(a[i]);
+      //   }
+
+      //   let x =
+      //     {
+      //       id: 1,
+      //       name: "mohit",
+      //       age: 85,
+      //     };
+
+      //   for (let i in x) {
+      //     console.log(i,x[i]);
+      //   }
+
+      function Output(i) {
+        i();
+      }
+
+      function add() {
+        console.log("I am add function");
+      }
+
+      Output(add);
+    </script>
+  </body>
+</html>
