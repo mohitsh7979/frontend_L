@@ -12,7 +12,7 @@
       let obj1 = [
         {
           id: 1,
-          name: "Aman",
+          name: "Mohit",
           age: 25,
           email: "mohit@gmail.com",
           city: "Jaipur",
@@ -29,7 +29,7 @@
 
         {
           id: 2,
-          name: "Ankit",
+          name: "Mana",
           age: 32,
           email: "ankit@gmail.com",
           city: "Udaipur",
@@ -42,18 +42,38 @@
         },
         {
           id: 3,
-          name: "Anu",
+          name: "MAma",
           age: 22,
           email: "anu@gmail.com",
           city: "Jodhpur",
           marks:{
-            maths:63,
+            maths:96,
             physics:96,
-            chemistery:12
+            chemistery:82
           },
           pin_code:[302001,3000210,35997,478899]
         },
       ];
+
+      let data_filter = obj1.filter((item)=>{
+
+           return(item.name.toLowerCase().includes("a") )
+      })
+
+      console.log(data_filter)
+
+
+      // let data_filter = obj1.filter((item)=>{
+
+      //     console.log(((item.marks.maths+item.marks.physics+item.marks.chemistery)*100)/300)
+
+      //     return (((item.marks.maths+item.marks.physics+item.marks.chemistery)*100)/300) > 75
+      // })
+
+      // console.log(data_filter)
+
+    
+
 
       
 
@@ -62,7 +82,7 @@
     //     console.log(item.pin_code)
     //   })
 
-     obj1[0].json()
+    
 
 
 
