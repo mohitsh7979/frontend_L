@@ -137,31 +137,45 @@
 
 
 
-      function Food(dish) {
-        return new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve(dish);
-          }, 3000);
-        });
-      }
+      // function Food(dish) {
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve(dish);
+      //     }, 3000);
+      //   });
+      // }
 
 
-      async function Output(){
+      // async function Output(){
 
-        let pizza = await Food("Pizza");
-        console.log(pizza)
-        let burger = await Food("Burger");
-        console.log(burger)
-        let patties = await Food("Patties");
-         console.log(patties)
-      }
+      //   let pizza = await Food("Pizza");
+      //   console.log(pizza)
+      //   let burger = await Food("Burger");
+      //   console.log(burger)
+      //   let patties = await Food("Patties");
+      //    console.log(patties)
+      // }
 
 
-      Output()
+      // Output()
 
-      console.log("I am one")
-      console.log("I am two")
-      console.log("I am three")
+      // console.log("I am one")
+      // console.log("I am two")
+      // console.log("I am three")
+
+    // let data = fetch('https://dummyjson.com/products');
+    
+    // data.then((response)=>{
+           
+    //   response.json().then((result)=>{
+           
+    //       result.products.map((item)=>{
+                
+    //         console.log(item.id,item.title,item.price,item.images[0])
+    //       })
+    //   })
+    // })
+
 
 
 
